@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Matrimonial Website Signup Page</title>
+    <link rel="stylesheet" type="text/css" href="signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="signup-body-redthemed">
+<header>
+    <nav></nav>
+    <div class="container">
+        <center>
+            <div class="box">
+                <center><h2>Sign Up</h2></center>
+                <form id="form">
+                    <div class="input-group">
+                        <input type="text" id="email" name="email" placeholder="Your email id">
+                        <div class="error"></div>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="password" name="password" placeholder="Your password">
+                        <div class="error"></div>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password">
+                        <div class="error"></div>
+                    </div>
+                    <button type="submit">Get Started</button>
+                    <br>
+                    <center>
+                        <p class="forgetpassword">Forget your password? <span>&nbsp;&nbsp;<a href="forgetpassword.html">Forget password.</a></span></p>
+                        <p class="alreadylogin">Already have an account? <span>&nbsp;&nbsp;<a href="loginredtheme.html">Log in.</a></span></p>
+                    </center>
+                </form>
+            </div>
+        </center>
+    </div>
+</header>
+<script>
+document.getElementById('form').addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevent the form from submitting the traditional way
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    const confirmPassword = document.getElementById('confirmPassword').value;
+
+    const data = { email, password, confirmPassword };
+
+    fetch('http://localhost:5501/signup', { // Update URL to correct port
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+    .then(response => response.text())
+    .then(data => {
+        alert(data);
+        if (data === 'Signup successful') {
+            window.location.href = 'main.html'; // Redirect on success
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+});
+</script>
+</body>
+</html>

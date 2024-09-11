@@ -1,0 +1,195 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.signup-body-redthemed {
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://img.freepik.com/free-vector/watercolor-burgundy-gold-background_52683-148150.jpg?t=st=1718007948~exp=1718011548~hmac=e603f7b30311aacce9a6e87fa642a9156745923c36a9cb1b22c38e282e74548b&w=996), linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+}
+
+.signup-body-redthemed header {
+    font-family: sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    background-size: 100% 100%;
+    position: relative;
+    background-repeat: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info {
+    color: white;
+    font-size: 20px;
+    padding: 20px 70px;
+    cursor: pointer;
+}
+
+.info span {
+    margin: 0 10px;
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+    padding: 0 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 2em;
+    font-family: normal;
+    letter-spacing: 2px;
+}
+
+.logo i {
+    color: #e84393;
+}
+
+.menu {
+    margin-top: 1%;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+.menu a:hover {
+    background: #ff446c;
+    border-radius: 8px;
+}
+
+.box {
+    background: white;
+    border-radius: 5%;
+    width: 90%; /* Adjusted width */
+    max-width: 500px; /* Added max-width */
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    margin: 0;
+    filter: brightness(95%);
+    opacity: 0.9;
+}
+
+.box h2,
+.login-box h2 {
+    margin: 0px 0px 15px 0px;
+    color: orangered;
+}
+
+form {
+    width: 100%;
+}
+
+form input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 20px 10px;
+    margin: 16px 0px 5px 0px;
+    outline: none;
+    border: none;
+    background: rgba(0, 0, 0, 0.1);
+    margin:16px 0px 13px 0px;
+
+}
+
+form button[type="submit"] {
+    width: 100%;
+    padding: 20px 10px;
+    margin: 10px 0;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    background: #ed2f46;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 5px;
+}
+
+form button[type="submit"]:hover {
+    background: transparent;
+    border: 1px solid grey;
+    color: black;
+}
+
+.box form button[type="submit"] {
+    width: 100%;
+    padding: 20px 10px;
+    margin: 20px 0 10px 0;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    background: #ed2f46;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 5px;
+}
+
+.box span,
+.login-box span {
+    color: #e84393;
+    cursor: pointer;
+}
+
+.error { 
+    color: red;
+    font-size: 13px;
+    margin-top: 1px;
+    text-align: left; /* Align error messages to the left */
+    padding-left: 5px; /* Add padding to separate from input */
+}
+
+
+.input-group.success input {
+    border-color: rgb(12, 181, 12);
+}
+
+.input-group.error input {
+    border-color: red;
+}
+
+
+.forgetpassword {
+    margin: 12px 0 22px 0;
+}
+
+/* Add these CSS rules at the end of your signup.css file */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.signup-body-redthemed header {
+    font-family: sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    background-size: 100% 100%;
+    position: relative;
+    background-repeat: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
